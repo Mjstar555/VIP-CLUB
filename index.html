@@ -646,48 +646,87 @@
     setInterval(updateTimer, 1000);
     updateTimer(); // initial call
 
-    // Dynamic Social Proof Toasts (Recent claims)
-    const mockClaims = [
-      "Rahul from Delhi just claimed 5% bonus",
-      "Karan from Mumbai got his VIP ID",
-      "Aman from Punjab received ₹5,000 extra balance",
-      "Vikram from Hyderabad just registered",
-      "Sandeep from Bangalore got his ID + welcome gift",
-      "Priya from Kolkata claimed her elite privileges",
-      "Rajesh from Jaipur just loaded balance with 5% reward",
-      "Amit from Lucknow unlocked his portal access"
+    // Dynamic Social Proof Toasts (Recent claims) - Organic, No-Repetition Logic
+    const rawNames = [
+      "Rahul", "Amit", "Priya", "Rohan", "Vikram", "Neha", "Karan", "Aman", "Sandeep", "Pooja",
+      "Ankit", "Vijay", "Deepak", "Sanjay", "Sunil", "Rajesh", "Abhishek", "Manish", "Harish", "Ravi",
+      "Arjun", "Rohit", "Aarav", "Vihaan", "Aditya", "Sai", "Ishaan", "Kabir", "Ananya", "Diya",
+      "Meera", "Kriti", "Riya", "Shreya", "Sneha", "Nisha", "Jyoti", "Preeti", "Ritu", "Komal",
+      "Kiran", "Sunita", "Gaurav", "Tarun", "Vivek", "Sameer"
     ];
+
+    const rawCities = [
+      "Delhi", "Mumbai", "Jaipur", "Pune", "Bangalore", "Hyderabad", "Ahmedabad", "Chennai", "Kolkata", "Surat",
+      "Lucknow", "Kanpur", "Nagpur", "Indore", "Thane", "Bhopal", "Visakhapatnam", "Patna", "Vadodara", "Ghaziabad",
+      "Ludhiana", "Agra", "Nashik", "Faridabad", "Meerut", "Rajkot", "Varanasi", "Srinagar", "Aurangabad", "Dhanbad",
+      "Amritsar", "Ranchi", "Coimbatore", "Gwalior"
+    ];
+
+    const rawActions = [
+      "just claimed 5% welcome bonus",
+      "got their VIP ID instantly",
+      "activated the welcome bonus",
+      "received extra load balance reward"
+    ];
+
+    // Copy arrays for tracking state
+    let names = [];
+    let cities = [];
+    let actions = [];
+
+    // Fisher-Yates Shuffle Algorithm
+    function shuffle(array) {
+      let currentIndex = array.length, randomIndex;
+      while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+      }
+      return array;
+    }
+
+    function resetArrays() {
+      names = shuffle([...rawNames]);
+      cities = shuffle([...rawCities]);
+      actions = shuffle([...rawActions]);
+    }
+
+    // Initial shuffle
+    resetArrays();
 
     const toast = document.getElementById('claim-toast');
     const toastMessage = document.getElementById('toast-message');
 
     function showToast() {
-      const randomIndex = Math.floor(Math.random() * mockClaims.length);
-      toastMessage.textContent = mockClaims[randomIndex];
+      // If we exhaust names or cities, reset and reshuffle to continue indefinitely without crashing
+      if (names.length === 0 || cities.length === 0 || actions.length === 0) {
+        resetArrays();
+      }
+
+      const name = names.pop();
+      const city = cities.pop();
+      const action = actions.pop();
+
+      toastMessage.textContent = `${name} from ${city} ${action}`;
 
       // Slide in
       toast.classList.remove('translate-y-32', 'opacity-0');
       toast.classList.add('translate-y-0', 'opacity-100');
 
-      // Slide out after 4 seconds
+      // Slide out after exactly 4 seconds (Auto-Dismiss)
       setTimeout(() => {
         toast.classList.remove('translate-y-0', 'opacity-100');
         toast.classList.add('translate-y-32', 'opacity-0');
+        
+        // After transition closes, schedule the next one organic way
+        // Delay between popups ranges from 12 to 35 seconds
+        const randomDelay = Math.floor(Math.random() * (35000 - 12000 + 1)) + 12000;
+        setTimeout(showToast, randomDelay);
       }, 4000);
     }
 
-    // Show toast every 10-15 seconds randomly
-    function scheduleNextToast() {
-      const delay = Math.floor(Math.random() * 8000) + 8000; // 8 to 16 seconds
-      setTimeout(() => {
-        showToast();
-        scheduleNextToast();
-      }, delay);
-    }
-    
-    // First toast after 4 seconds
+    // Start first toast after 4 seconds of page load
     setTimeout(showToast, 4000);
-    scheduleNextToast();
   </script>
 
 </body>
