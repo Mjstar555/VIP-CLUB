@@ -538,8 +538,8 @@
     </div>
   </section>
 
-  <!-- Social Proof Toast Notification -->
-  <div class="fixed bottom-4 left-0 right-0 z-40 px-3 transition-all duration-500 translate-y-20 opacity-0 select-none pointer-events-none" id="claim-toast">
+  <!-- Social Proof Toast Notification (positioned above fixed bottom bar) -->
+  <div class="fixed bottom-16 sm:bottom-20 left-0 right-0 z-40 px-3 transition-all duration-500 translate-y-20 opacity-0 select-none pointer-events-none" id="claim-toast">
     <div class="max-w-xs sm:max-w-sm mx-auto bg-zinc-900/98 border border-brand-gold/25 px-3 py-2.5 rounded-xl shadow-xl flex items-start gap-2.5">
       <div class="w-7 h-7 rounded-full bg-brand-gold/15 flex items-center justify-center flex-shrink-0 mt-0.5">
         <i class="fa-solid fa-circle-check text-brand-gold text-xs"></i>
@@ -554,8 +554,24 @@
     </div>
   </div>
 
+  <!-- Sticky Bottom Fixed CTA Bar (Matches 3rd CTA style) -->
+  <div class="fixed bottom-0 left-0 right-0 w-full max-w-full z-50 p-2 sm:p-3 bg-black/90 backdrop-blur-md border-t border-brand-green/20 shadow-2xl">
+    <div class="max-w-md mx-auto">
+      <a href="https://wa.me/919999999999?text=I%20want%20Id" 
+         target="_blank"
+         class="group relative flex items-center justify-center gap-2.5 sm:gap-3 w-full bg-brand-neonGreen hover:bg-brand-neonGreen/90 text-black font-extrabold text-xs sm:text-base py-3 sm:py-3.5 px-4 rounded-xl shadow-xl transition-all duration-300 animate-pulse-slow overflow-hidden">
+        
+        <!-- Shimmer Effect -->
+        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none"></span>
+        
+        <i class="fa-brands fa-whatsapp text-lg sm:text-2xl"></i>
+        <span class="tracking-tight">GET MY VIP ID + 5% BONUS NOW</span>
+      </a>
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="relative z-10 bg-black/60 border-t border-white/5 py-12 px-4 text-center text-sm text-brand-muted pb-12">
+  <footer class="relative z-10 bg-black/60 border-t border-white/5 py-12 px-4 text-center text-sm text-brand-muted pb-24 sm:pb-20">
     <div class="max-w-7xl mx-auto space-y-6">
       <div class="flex items-center justify-center gap-3">
         <div class="w-8 h-8 rounded-lg bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center">
