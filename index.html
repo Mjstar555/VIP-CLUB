@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP Club | Exclusive 5% Welcome Bonus Promotion</title>
+  <meta name="description" content="Claim your exclusive 5% welcome bonus now. Secure, fast, and 24/7 instant support on WhatsApp. Connect with India's most trusted elite club today.">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#06070a',
+              card: '#111420',
+              gold: '#ffd700',
+              goldglow: '#f3c623',
+              green: '#25d366', // WhatsApp Brand Green
+              neonGreen: '#00ff66',
+              accent: '#f59e0b', // Amber-500
+              muted: '#94a3b8',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          animation: {
+            'pulse-slow': 'pulse-custom 3s infinite',
+            'float': 'float-custom 6s ease-in-out infinite',
+            'shimmer': 'shimmer-custom 2.5s infinite linear',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #06070a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ffd700;
+    }
+
+    /* Keyframes for premium animations */
+    @keyframes pulse-custom {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 255, 102, 0.4), 0 0 5px rgba(0, 255, 102, 0.2);
+      }
+      50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 35px rgba(0, 255, 102, 0.8), 0 0 15px rgba(0, 255, 102, 0.4);
+      }
+    }
+
+    @keyframes float-custom {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-12px) rotate(1deg);
+      }
+    }
+
+    @keyframes shimmer-custom {
+      0% {
+        background-position: -200% 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    .glow-gold {
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+    }
+    
+    .glow-green {
+      box-shadow: 0 0 25px rgba(0, 255, 102, 0.25);
+    }
+
+    .glassmorphism {
+      background: rgba(17, 20, 32, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .glass-gold-card {
+      background: linear-gradient(135deg, rgba(25, 20, 10, 0.8) 0%, rgba(10, 10, 10, 0.95) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+    }
+
+    /* Gradient Text helper */
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #fff7ad 0%, #ffd700 50%, #b89200 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-green {
+      background: linear-gradient(135deg, #a7f3d0 0%, #00ff66 50%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Grid background effect */
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    }
+
+    .blur-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="bg-brand-bg text-white font-sans overflow-x-hidden antialiased bg-grid bg-fixed">
+
+  <!-- Ambient Light Globs -->
+  <div class="blur-glow bg-brand-gold w-[400px] h-[400px] top-[-100px] left-[-100px]"></div>
+  <div class="blur-glow bg-brand-neonGreen w-[500px] h-[500px] top-[20%] right-[-150px]"></div>
+  <div class="blur-glow bg-brand-gold w-[300px] h-[300px] bottom-[10%] left-[-100px]"></div>
+
+  <!-- Header -->
+  <header class="relative z-50 w-full glassmorphism border-b border-white/5 py-4 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo/Brand Identity -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-gold to-brand-accent flex items-center justify-center shadow-lg shadow-brand-gold/10">
+          <i class="fa-solid fa-crown text-black text-xl"></i>
+        </div>
+        <div>
+          <span class="font-display font-bold text-lg sm:text-xl tracking-wider text-gradient-gold block leading-none">VIP CLUB</span>
+          <span class="text-[9px] uppercase tracking-widest text-brand-muted block">Elite Platinum Member Portal</span>
+        </div>
+      </div>
+
+      <!-- Online Status Badge -->
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 bg-brand-green/10 border border-brand-green/20 px-3 py-1.5 rounded-full">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-neonGreen opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-neonGreen"></span>
+          </span>
+          <span class="text-xs font-semibold text-brand-neonGreen tracking-wider uppercase">Support Online</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative z-10 pt-8 pb-16 px-4 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+    <!-- Hero Text & Copy -->
+    <div class="flex-1 text-center lg:text-left space-y-6">
+      <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full">
+        <i class="fa-solid fa-shield text-brand-gold text-xs"></i>
+        <span class="text-xs font-bold tracking-widest uppercase text-brand-muted">India's Premium WhatsApp Platform</span>
+      </div>
+
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+        Claim Your <span class="text-gradient-gold">5% Exclusive</span> <br>
+        <span class="text-gradient-green">Welcome Bonus!</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-brand-muted max-w-xl mx-auto lg:mx-0 font-light leading-relaxed font-sans">
+        Unlock VIP credentials in less than 30 seconds. Get an automatic <strong class="text-white font-bold">5% extra bonus</strong> added directly to your account. No hidden fees, instant processing, and active WhatsApp support.
+      </p>
+
+      <!-- CTA Button container (Pulsating) -->
+      <div class="pt-4 max-w-md mx-auto lg:mx-0">
+        <a href="https://wa.me/919999999999?text=I%20want%20Id" 
+           target="_blank"
+           class="group relative flex items-center justify-center gap-3 w-full bg-brand-neonGreen hover:bg-brand-neonGreen/90 text-black font-extrabold text-lg sm:text-xl py-4 sm:py-5 px-8 rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-brand-green/30 animate-pulse-slow overflow-hidden">
+          
+          <!-- Shimmer Effect -->
+          <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none"></span>
+          
+          <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl animate-bounce-slow"></i>
+          <span>CLAIM 5% BONUS ON WHATSAPP</span>
+        </a>
+        <p class="text-xs text-brand-muted mt-3 text-center lg:text-left flex items-center justify-center lg:justify-start gap-1">
+          <i class="fa-solid fa-bolt text-brand-neonGreen animate-pulse"></i>
+          <span>Clicking redirects directly to our verified WhatsApp support portal.</span>
+        </p>
+      </div>
+
+      <!-- Trust Badges & Social Proof -->
+      <div class="pt-6 border-t border-white/5 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-brand-muted">
+        <div class="flex items-center gap-1.5">
+          <span class="text-brand-gold">★★★★★</span>
+          <span class="font-bold text-white">4.9/5</span>
+          <span>(12,800+ VIPs)</span>
+        </div>
+        <div class="w-1.5 h-1.5 rounded-full bg-white/10 hidden sm:block"></div>
+        <div class="flex items-center gap-1.5">
+          <i class="fa-solid fa-bolt text-brand-gold"></i>
+          <span class="font-semibold text-white">1 Min Setup</span>
+        </div>
+        <div class="w-1.5 h-1.5 rounded-full bg-white/10 hidden sm:block"></div>
+        <div class="flex items-center gap-1.5">
+          <i class="fa-solid fa-lock text-brand-neonGreen"></i>
+          <span class="font-semibold text-white">100% Encrypted</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Image / Visual Representation -->
+    <div class="flex-1 w-full max-w-md lg:max-w-none flex justify-center items-center relative">
+      <!-- Ambient Backglow -->
+      <div class="absolute w-[80%] h-[80%] rounded-full bg-gradient-to-tr from-brand-gold/10 to-brand-green/20 blur-3xl -z-10 animate-pulse"></div>
+      
+      <!-- Generated Image Container -->
+      <div class="relative w-full max-w-sm sm:max-w-md animate-float glass-gold-card p-3 rounded-[2.5rem] shadow-2xl">
+        <img src="assets/vip_gold_card.png" 
+             alt="VIP Elite Golden Membership Card" 
+             class="w-full h-auto rounded-[2rem] object-cover border border-white/5"
+             loading="eager">
+             
+        <!-- Overlay Badges on Card Visual -->
+        <div class="absolute -bottom-4 -right-4 bg-black/90 border border-brand-gold/30 rounded-2xl p-4 flex items-center gap-3 shadow-2xl backdrop-blur-md">
+          <div class="w-10 h-10 rounded-full bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center">
+            <i class="fa-solid fa-gift text-brand-gold text-lg"></i>
+          </div>
+          <div>
+            <p class="text-[10px] text-brand-muted uppercase font-bold tracking-wider leading-none">Instant Welcome Gift</p>
+            <p class="text-sm font-extrabold text-white">5% Extra On First Load</p>
+          </div>
+        </div>
+        
+        <div class="absolute -top-4 -left-4 bg-black/90 border border-brand-green/30 rounded-2xl p-3 flex items-center gap-2 shadow-2xl backdrop-blur-md">
+          <div class="w-2.5 h-2.5 rounded-full bg-brand-neonGreen animate-ping"></div>
+          <p class="text-xs font-bold text-white tracking-wide">ID Issuance Active</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Proof Counter / Stats Section -->
+  <section class="relative z-10 py-10 bg-black/40 border-y border-white/5 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-4 border-r border-white/5 last:border-0">
+        <p class="font-display text-2xl sm:text-4xl font-extrabold text-brand-gold">₹50L+</p>
+        <p class="text-xs sm:text-sm text-brand-muted uppercase tracking-widest mt-1">Paid Out Daily</p>
+      </div>
+      <div class="p-4 border-r border-white/5 last:border-0">
+        <p class="font-display text-2xl sm:text-4xl font-extrabold text-white">45 Seconds</p>
+        <p class="text-xs sm:text-sm text-brand-muted uppercase tracking-widest mt-1">Average Response</p>
+      </div>
+      <div class="p-4 border-r border-white/5 last:border-0 col-span-2 md:col-span-1">
+        <p class="font-display text-2xl sm:text-4xl font-extrabold text-brand-neonGreen">15,000+</p>
+        <p class="text-xs sm:text-sm text-brand-muted uppercase tracking-widest mt-1">Active VIP Users</p>
+      </div>
+      <div class="p-4 last:border-0 col-span-2 md:col-span-1">
+        <p class="font-display text-2xl sm:text-4xl font-extrabold text-white">0% Fees</p>
+        <p class="text-xs sm:text-sm text-brand-muted uppercase tracking-widest mt-1">On All Transactions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers & Benefits Section -->
+  <section class="relative z-10 py-20 px-4 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <p class="text-xs font-bold text-brand-gold tracking-widest uppercase mb-2">Unmatched Premium Offerings</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-extrabold">Why Elite Members Choose Us</h2>
+      <p class="text-sm sm:text-base text-brand-muted mt-3">We provide the absolute fastest processing speed and premium VIP service on WhatsApp.</p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Benefit 1 -->
+      <div class="glassmorphism p-6 rounded-2xl flex flex-col justify-between hover:border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/5 group">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center mb-6 group-hover:bg-brand-gold group-hover:text-black transition-all duration-300">
+            <i class="fa-solid fa-gift text-brand-gold text-xl group-hover:text-black"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">Instant 5% Bonus</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">Get a 5% extra cash bonus credited automatically to your portal access on your first deposit.</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-xs text-brand-gold font-bold">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Applied Automatically</span>
+        </div>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div class="glassmorphism p-6 rounded-2xl flex flex-col justify-between hover:border-brand-green/30 transition-all duration-300 hover:shadow-brand-green/5 group">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-brand-green/10 border border-brand-green/20 flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-black transition-all duration-300">
+            <i class="fa-solid fa-headset text-brand-green text-xl group-hover:text-black"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">24/7 VIP Support</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">Skip the queue. Connect directly with a dedicated VIP customer success representative on WhatsApp anytime.</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-xs text-brand-green font-bold">
+          <i class="fa-solid fa-clock"></i>
+          <span>Instant WhatsApp Reply</span>
+        </div>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div class="glassmorphism p-6 rounded-2xl flex flex-col justify-between hover:border-white/20 transition-all duration-300 group">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-white group-hover:text-black transition-all duration-300">
+            <i class="fa-solid fa-shield-halved text-white text-xl group-hover:text-black"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">100% Safe & Secure</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">Your data and account transactions are encrypted. Enjoy complete privacy and ultra-secure operations.</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-xs text-brand-muted font-bold">
+          <i class="fa-solid fa-lock"></i>
+          <span>Private & Encrypted</span>
+        </div>
+      </div>
+
+      <!-- Benefit 4 -->
+      <div class="glassmorphism p-6 rounded-2xl flex flex-col justify-between hover:border-brand-gold/30 transition-all duration-300 hover:shadow-brand-gold/5 group">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center mb-6 group-hover:bg-brand-gold group-hover:text-black transition-all duration-300">
+            <i class="fa-solid fa-circle-dollar-to-slot text-brand-gold text-xl group-hover:text-black"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">Zero Admin Charges</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">No deposit fees, no processing commissions, and no hidden terms. Your bonuses are completely yours.</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-xs text-brand-gold font-bold">
+          <i class="fa-solid fa-percent"></i>
+          <span>No Admin Cuts</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Middle CTA (Second distributed CTA) -->
+    <div class="mt-16 max-w-xl mx-auto text-center px-4">
+      <a href="https://wa.me/919999999999?text=I%20want%20Id" 
+         target="_blank"
+         class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-transparent border-2 border-brand-neonGreen hover:bg-brand-neonGreen text-brand-neonGreen hover:text-black font-extrabold text-base sm:text-lg py-4 px-10 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-brand-green/20 group">
+        <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+        <span>CONNECT TO CLAIM YOUR ID + BONUS</span>
+      </a>
+      <p class="text-xs text-brand-muted mt-3">Active members online now: 428</p>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="relative z-10 py-16 bg-black/30 border-y border-white/5 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-xs font-bold text-brand-gold tracking-widest uppercase mb-2">Fast Activation Cycle</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold">Get Your Portal ID in 3 Simple Steps</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
+        <!-- Connecting Line for larger screens -->
+        <div class="hidden lg:block absolute top-1/2 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-brand-gold/10 via-brand-neonGreen/20 to-brand-gold/10 -translate-y-12 -z-10"></div>
+        
+        <!-- Step 1 -->
+        <div class="glassmorphism p-8 rounded-2xl text-center relative border border-white/5">
+          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-brand-gold text-black font-extrabold flex items-center justify-center shadow-lg">1</div>
+          <div class="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mx-auto mb-6">
+            <i class="fa-solid fa-comment-dots text-brand-gold text-2xl"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Connect via WhatsApp</h3>
+          <p class="text-sm text-brand-muted">Click any CTA on this page to initiate a secure chat. Message comes pre-filled with "I want Id".</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glassmorphism p-8 rounded-2xl text-center relative border border-white/5">
+          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-brand-neonGreen text-black font-extrabold flex items-center justify-center shadow-lg">2</div>
+          <div class="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mx-auto mb-6">
+            <i class="fa-solid fa-user-check text-brand-neonGreen text-2xl"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Fast-Track Verification</h3>
+          <p class="text-sm text-brand-muted">Our dedicated automated manager sets up your account and generates your secure elite credentials instantly.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glassmorphism p-8 rounded-2xl text-center relative border border-white/5">
+          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-brand-gold text-black font-extrabold flex items-center justify-center shadow-lg">3</div>
+          <div class="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mx-auto mb-6">
+            <i class="fa-solid fa-coins text-brand-gold text-2xl"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Claim 5% Added Bonus</h3>
+          <p class="text-sm text-brand-muted">Get your portal login instantly with an extra 5% cash value automatically added to your first load balance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Accordion FAQ Section -->
+  <section class="relative z-10 py-20 px-4 max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-xs font-bold text-brand-gold tracking-widest uppercase mb-2">Got Questions?</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-extrabold">Frequently Asked Questions</h2>
+    </div>
+
+    <!-- Accordions -->
+    <div class="space-y-4">
+      
+      <!-- FAQ 1 -->
+      <div class="glassmorphism rounded-2xl overflow-hidden border border-white/5 transition-colors duration-300">
+        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-white/5 focus:outline-none transition-all duration-200">
+          <span class="font-display font-semibold text-white text-base sm:text-lg">How do I claim my 5% welcome bonus?</span>
+          <i class="fa-solid fa-chevron-down text-brand-muted transition-transform duration-300"></i>
+        </button>
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white/[0.01]">
+          <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed">
+            It is simple! Click any green button on this page to launch WhatsApp. Message our virtual assistant. Once you finalize your registration and make your initial entry, the 5% extra value is automatically computed and added to your balance.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="glassmorphism rounded-2xl overflow-hidden border border-white/5 transition-colors duration-300">
+        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-white/5 focus:outline-none transition-all duration-200">
+          <span class="font-display font-semibold text-white text-base sm:text-lg">Are there any hidden fees or admin charges?</span>
+          <i class="fa-solid fa-chevron-down text-brand-muted transition-transform duration-300"></i>
+        </button>
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white/[0.01]">
+          <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed">
+            Absolutely not. We pride ourselves on transparent operations. There are no deposit charges, withdrawal commissions, or admin cuts on your account load. Whatever amount you add and earn remains 100% yours.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="glassmorphism rounded-2xl overflow-hidden border border-white/5 transition-colors duration-300">
+        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-white/5 focus:outline-none transition-all duration-200">
+          <span class="font-display font-semibold text-white text-base sm:text-lg">How long does the ID setup process take?</span>
+          <i class="fa-solid fa-chevron-down text-brand-muted transition-transform duration-300"></i>
+        </button>
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white/[0.01]">
+          <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed">
+            Our specialized support team processes all VIP requests instantly. From the moment you connect on WhatsApp, it takes less than 60 seconds to get your system ID generated and active.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="glassmorphism rounded-2xl overflow-hidden border border-white/5 transition-colors duration-300">
+        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-white/5 focus:outline-none transition-all duration-200">
+          <span class="font-display font-semibold text-white text-base sm:text-lg">Is this platform safe and secure?</span>
+          <i class="fa-solid fa-chevron-down text-brand-muted transition-transform duration-300"></i>
+        </button>
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white/[0.01]">
+          <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed">
+            Yes, completely. All messaging communication goes directly through WhatsApp’s end-to-end encrypted secure network. We do not store or share details with third-party service agencies, keeping your identity private.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bottom CTA & Countdown Urgency (Third main CTA) -->
+  <section class="relative z-10 py-16 px-4 max-w-5xl mx-auto">
+    <div class="glass-gold-card rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-2xl">
+      <!-- Glow background -->
+      <div class="absolute inset-0 bg-gradient-to-tr from-brand-gold/5 via-brand-neonGreen/5 to-transparent -z-10"></div>
+      
+      <p class="text-xs font-bold text-brand-gold tracking-widest uppercase mb-2">LIMITED TIME PROMOTION</p>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold max-w-2xl mx-auto leading-tight">
+        Claim Your Welcome <br class="sm:hidden"> Bonus Before It Expires
+      </h2>
+      
+      <!-- Countdown timer -->
+      <div class="flex items-center justify-center gap-4 my-8">
+        <div class="bg-black/60 border border-white/5 rounded-xl px-4 py-3 min-w-[70px]">
+          <span id="timer-min" class="font-display text-2xl sm:text-3xl font-extrabold text-brand-gold">14</span>
+          <span class="block text-[10px] text-brand-muted uppercase tracking-wider mt-1">MINUTES</span>
+        </div>
+        <span class="text-2xl font-bold text-brand-gold animate-pulse">:</span>
+        <div class="bg-black/60 border border-white/5 rounded-xl px-4 py-3 min-w-[70px]">
+          <span id="timer-sec" class="font-display text-2xl sm:text-3xl font-extrabold text-brand-gold">59</span>
+          <span class="block text-[10px] text-brand-muted uppercase tracking-wider mt-1">SECONDS</span>
+        </div>
+      </div>
+
+      <p class="text-sm text-brand-muted max-w-md mx-auto mb-8 font-light">
+        Due to high volume, our exclusive 5% bonus is only guaranteed for connections made in the next 15 minutes. Secure your spots today.
+      </p>
+
+      <!-- Ultimate Pulsating CTA -->
+      <div class="max-w-md mx-auto">
+        <a href="https://wa.me/919999999999?text=I%20want%20Id" 
+           target="_blank"
+           class="group relative flex items-center justify-center gap-3 w-full bg-brand-neonGreen hover:bg-brand-neonGreen/90 text-black font-extrabold text-lg sm:text-xl py-4 sm:py-5 px-8 rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-brand-green/40 animate-pulse-slow overflow-hidden">
+          
+          <!-- Shimmer Effect -->
+          <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none"></span>
+          
+          <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+          <span>GET MY VIP ID + 5% BONUS NOW</span>
+        </a>
+      </div>
+
+      <!-- Secure Icons -->
+      <div class="mt-8 flex justify-center items-center gap-8 text-xs text-brand-muted">
+        <span class="flex items-center gap-1"><i class="fa-solid fa-lock text-brand-neonGreen"></i> SSL Secured</span>
+        <span class="flex items-center gap-1"><i class="fa-solid fa-circle-check text-brand-gold"></i> Verified Members Only</span>
+        <span class="flex items-center gap-1"><i class="fa-solid fa-user-shield text-white"></i> 100% Encrypted</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Mobile Footer (For mobile conversions) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-brand-bg/85 backdrop-blur-md border-t border-white/10 md:hidden flex justify-center items-center shadow-2xl">
+    <a href="https://wa.me/919999999999?text=I%20want%20Id" 
+       target="_blank"
+       class="flex items-center justify-center gap-2.5 w-full bg-brand-neonGreen text-black font-extrabold text-base py-3.5 px-6 rounded-xl shadow-lg shadow-brand-green/30 animate-pulse active:scale-95 transition-transform duration-100">
+      <i class="fa-brands fa-whatsapp text-xl"></i>
+      <span> 👉 CLAIM 5% BONUS ON WHATSAPP NOW</span>
+    </a>
+  </div>
+
+  <!-- Dynamic Success Toast Notifications (Social Proof overlay) -->
+  <div id="claim-toast" class="fixed bottom-6 left-6 z-50 bg-black/95 border border-brand-gold/20 p-4 rounded-xl shadow-2xl max-w-sm flex items-center gap-4 transition-all duration-500 transform translate-y-32 opacity-0 select-none">
+    <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0">
+      <i class="fa-solid fa-circle-check text-brand-gold text-lg"></i>
+    </div>
+    <div>
+      <p class="text-xs text-brand-muted uppercase font-bold tracking-wider leading-none">VIP Reward Claimed</p>
+      <p class="text-sm font-semibold text-white mt-1" id="toast-message">Rahul from Delhi just claimed 5% bonus</p>
+      <span class="text-[10px] text-brand-neonGreen flex items-center gap-1 mt-0.5"><i class="fa-solid fa-clock"></i> Just now</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="relative z-10 bg-black/60 border-t border-white/5 py-12 px-4 text-center text-sm text-brand-muted pb-24 md:pb-12">
+    <div class="max-w-7xl mx-auto space-y-6">
+      <div class="flex items-center justify-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center">
+          <i class="fa-solid fa-crown text-brand-gold text-sm"></i>
+        </div>
+        <span class="font-display font-bold text-base tracking-wider text-white">VIP CLUB</span>
+      </div>
+      
+      <p class="max-w-md mx-auto text-xs text-brand-muted/70 leading-relaxed">
+        Disclaimer: This page is for promotional, elite membership invitations. No real-money gambling mechanics are hosted directly on this landing page. Access is limited to members aged 18 and older.
+      </p>
+
+      <div class="flex justify-center gap-6 text-xs text-brand-muted/65">
+        <a href="#" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+        <span>•</span>
+        <a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+        <span>•</span>
+        <a href="#" class="hover:text-white transition-colors duration-200">Secure Play Guidelines</a>
+      </div>
+
+      <p class="text-xs text-brand-muted/50 pt-4">
+        © 2026 VIP Club Elite Promotions. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts for interactivity, FAQ, Timer and Success Toasts -->
+  <script>
+    // FAQ Toggle functionality with smooth transitions
+    function toggleFaq(button) {
+      const icon = button.querySelector('i');
+      const content = button.nextElementSibling;
+      const parent = button.parentElement;
+
+      // Close other open items
+      document.querySelectorAll('.glassmorphism').forEach(item => {
+        const itemBtn = item.querySelector('button');
+        if (itemBtn && itemBtn !== button) {
+          const itemContent = itemBtn.nextElementSibling;
+          if (itemContent && itemContent.style.maxHeight) {
+            itemContent.style.maxHeight = null;
+            itemBtn.querySelector('i').classList.remove('rotate-180');
+            item.classList.remove('border-brand-gold/30', 'border-brand-green/30');
+          }
+        }
+      });
+
+      // Toggle current
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        icon.classList.remove('rotate-180');
+        parent.classList.remove('border-brand-gold/30', 'border-brand-green/30');
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.classList.add('rotate-180');
+        // Alternating color glows for interest
+        if (Math.random() > 0.5) {
+          parent.classList.add('border-brand-gold/30');
+        } else {
+          parent.classList.add('border-brand-green/30');
+        }
+      }
+    }
+
+    // Urgency CountDown Timer
+    const countdownMinutes = 15;
+    let timeRemaining = countdownMinutes * 60;
+
+    const minSpan = document.getElementById('timer-min');
+    const secSpan = document.getElementById('timer-sec');
+
+    function updateTimer() {
+      const minutes = Math.floor(timeRemaining / 60);
+      const seconds = timeRemaining % 60;
+
+      minSpan.textContent = minutes < 10 ? '0' + minutes : minutes;
+      secSpan.textContent = seconds < 10 ? '0' + seconds : seconds;
+
+      if (timeRemaining > 0) {
+        timeRemaining--;
+      } else {
+        // Reset countdown to continue FOMO loop if it runs out
+        timeRemaining = countdownMinutes * 60;
+      }
+    }
+    
+    setInterval(updateTimer, 1000);
+    updateTimer(); // initial call
+
+    // Dynamic Social Proof Toasts (Recent claims)
+    const mockClaims = [
+      "Rahul from Delhi just claimed 5% bonus",
+      "Karan from Mumbai got his VIP ID",
+      "Aman from Punjab received ₹5,000 extra balance",
+      "Vikram from Hyderabad just registered",
+      "Sandeep from Bangalore got his ID + welcome gift",
+      "Priya from Kolkata claimed her elite privileges",
+      "Rajesh from Jaipur just loaded balance with 5% reward",
+      "Amit from Lucknow unlocked his portal access"
+    ];
+
+    const toast = document.getElementById('claim-toast');
+    const toastMessage = document.getElementById('toast-message');
+
+    function showToast() {
+      const randomIndex = Math.floor(Math.random() * mockClaims.length);
+      toastMessage.textContent = mockClaims[randomIndex];
+
+      // Slide in
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      // Slide out after 4 seconds
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-32', 'opacity-0');
+      }, 4000);
+    }
+
+    // Show toast every 10-15 seconds randomly
+    function scheduleNextToast() {
+      const delay = Math.floor(Math.random() * 8000) + 8000; // 8 to 16 seconds
+      setTimeout(() => {
+        showToast();
+        scheduleNextToast();
+      }, delay);
+    }
+    
+    // First toast after 4 seconds
+    setTimeout(showToast, 4000);
+    scheduleNextToast();
+  </script>
+
+</body>
+</html>
